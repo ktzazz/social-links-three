@@ -5,3 +5,24 @@
   margin: 0;
   padding: 0;
 }
+
+:root{
+  --font-size-p: 14px;
+  --font-family: 'Inter';
+  --border-radious: 25%;  
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+  --weight: 400;
+  --weight: 600;
+  --weight: 700; 
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Grey900);
+
+}
