@@ -51,9 +51,13 @@ body{
     align-items: center;
     font-weight: var(--weight6);
     font-size: 12px;
+    text-decoration: none;
+    color: var(--White);
     }
 
-.item:hover{
+  
+
+.item:active{
     color: var(--Grey800);
     background-color: var(--Green);
     cursor: pointer;
