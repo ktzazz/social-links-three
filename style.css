@@ -1,3 +1,18 @@
+
+
+:root{
+  --font-size-p: 14px;
+  --font-family: 'Inter'; 
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: rgb(51, 51, 51);
+  --Grey800: rgb(31, 31, 31);
+  --Grey900: rgb(20, 20, 20);
+  --weight4: 400;
+  --weight6: 600;
+  --weight7: 700; 
+}
+
 *,
 *::before,
 *::after {
@@ -6,23 +21,86 @@
   padding: 0;
 }
 
-:root{
-  --font-size-p: 14px;
-  --font-family: 'Inter';
-  --border-radious: 25%;  
-  --Green: hsl(75, 94%, 57%);
-  --White: hsl(0, 0%, 100%);
-  --Grey700: hsl(0, 0%, 20%);
-  --Grey800: hsl(0, 0%, 12%);
-  --Grey900: hsl(0, 0%, 8%);
-  --weight: 400;
-  --weight: 600;
-  --weight: 700; 
-}
-
 body{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--Grey900);
+    font-family: var(--font-family);
+}
 
+.box{
+    width: 20rem;
+    height: 31rem;
+    background-color: var(--Grey800);
+    border-radius: 10px;
+    padding: 25px;
+    color: var(--White);
+}
+
+.item{
+    width: 92%;
+    height: 36px;
+    margin: 0 auto;
+    border-radius: 7px;
+    background-color: var(--Grey700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--weight7);
+    font-size: 12px;
+    }
+
+.item:hover{
+    color: var(--Grey800);
+    background-color: var(--Green);
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 22px;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 25%;
+}
+
+#name{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.23rem;
+    font-weight: var(--weight6);
+}
+
+#location{
+    margin-top: 7px;
+    text-align: center;
+    color: var(--Green);
+    font-size: .7rem;
+    font-weight: var(--weight6);
+}
+
+#info{
+    margin-top: 21px;
+    text-align: center;
+    font-size: .65rem;
+    font-weight: var(--weight4);
+
+}
+
+
+.attribution{
+    position: absolute;
+    bottom: 15px;
+    color: var(--Green);
 }
